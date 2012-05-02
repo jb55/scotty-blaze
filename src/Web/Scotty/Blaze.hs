@@ -12,11 +12,15 @@ import           Text.Blaze.Html (Html)
 import           Blaze.ByteString.Builder (Builder)
 import           Text.Blaze.Html.Renderer.Utf8 (renderHtmlBuilder)
 
+-- | Render some Blaze Html
+--
 blaze :: Html -> ActionM ()
 blaze h = do
   header "Content-Type" "text/html"
   builder $ renderHtmlBuilder h
 
+-- | Render a generic builder
+--
 builder :: Builder -> ActionM ()
 builder = MS.modify . setContent
 
