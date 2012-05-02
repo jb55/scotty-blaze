@@ -3,6 +3,14 @@
 
 blaze-html integration for scotty
 
+## Exports
+
+```haskell
+blaze :: Html -> ActionM ()
+
+builder :: Builder -> ActionM ()
+```
+
 ## Example
 
 ```haskell
