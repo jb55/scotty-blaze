@@ -3,7 +3,7 @@ Version:             0.1.2
 Synopsis:            blaze-html integration for scotty
 
 
-License:             BSD3
+License:             MIT
 License-file:        LICENSE
 Author:              Bill Casarin
 Maintainer:          bill@casarin.ca
